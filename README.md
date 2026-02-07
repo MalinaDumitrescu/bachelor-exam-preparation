@@ -9,33 +9,19 @@
 
 **Courses:** Fundamentals of Programming, Object-Oriented Programming, Data Structures
 
-1.
+1. Searching (sequential and binary), merging, sorting algorithms (selection sort, bubble sort, insertion sort, merge sort, quicksort). Backtracking method.
 
-Searching (sequential and binary), merging, sorting algorithms (selection sort, bubble sort, insertion sort, merge sort, quicksort). Backtracking method.
+2. Algorithms in pseudocode. Algorithm complexity.
 
-2.
+3. OOP concepts in programming languages (Python, C++, Java, C#): Classes and objects. Class members and access specifiers. Constructors and destructors.
 
-Algorithms in pseudocode. Algorithm complexity.
+4. Derived classes and inheritance. Method overriding. Polymorphism. Dynamic binding. Abstract classes and interfaces.
 
-3.
+5. UML class diagrams. Relationships between classes.
 
-OOP concepts in programming languages (Python, C++, Java, C#): Classes and objects. Class members and access specifiers. Constructors and destructors.
+6. Lists. Dictionaries. Binary search trees (excluding balanced binary search trees). Hash tables.
 
-4.
-
-Derived classes and inheritance. Method overriding. Polymorphism. Dynamic binding. Abstract classes and interfaces.
-
-5.
-
-UML class diagrams. Relationships between classes.
-
-6.
-
-Lists. Dictionaries. Binary search trees (excluding balanced binary search trees). Hash tables.
-
-7.
-
-Identifying appropriate data structures and data types for problem solving (only from those listed in point 6). Using existing libraries for these structures (Python, Java, C++, C#).
+7. Identifying appropriate data structures and data types for problem solving (only from those listed in point 6). Using existing libraries for these structures (Python, Java, C++, C#).
 
 Exam subjects may include code written in Python, Java, C++, C#, or pseudocode.
 Solutions may be required in Python, Java, C++, C#, or pseudocode.
