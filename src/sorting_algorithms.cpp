@@ -1,10 +1,11 @@
 #include <iostream>
 #include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 #include "sorting_algorithms.hpp"
 
-void merge(vector<int>& array, int left, int right, int middle){
+void merge(vector<int>& array, int left, int middle, int right){
     int i, j, k;
     int length1 = middle - left + 1;
     int length2 = right - middle;
@@ -61,7 +62,37 @@ void mergeSort(vector<int>& array, int left, int right){
        mergeSort(array, left, middle);
        mergeSort(array, middle + 1, right);
 
-       merge(array, left, right, middle);
+       merge(array, left, middle, right);
     }
 
+}
+
+void selectionSort(vector<int> &array, int length){
+    for(int i = 0; i < length - 1; i++){
+        int minIndex = i;
+
+        for(int j = i + 1; j < length; j++){
+            if(array[j] < array[minIndex]){
+                minIndex = j;
+            }
+        }
+        swap(array[i],array[minIndex]);
+    }
+}
+
+void bubbleSort(vector<int> &array, int length){
+    bool swapped;
+    for(int i = 0; i < length - 1; i++){
+        swapped = false;
+        for(int j = 0; j < length - i - 1; j++){
+            if(array[j] > array[j + 1]){
+                swap(array[j], array[j + 1]);
+                swapped = true;
+            }
+        }
+        // if no two elements were swapped -> break
+        if(!swapped){
+            break;
+        }
+    }
 }
