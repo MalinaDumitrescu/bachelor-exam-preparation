@@ -396,6 +396,102 @@ void ex_25() {
         cout << endl;
     }
 }
+
+
+void ex_26() {
+    for (int i = 1; i <= 10; i++) {
+        for (int j = 1; j <= 10; j++) {
+            cout << setw(4) << i * j ;
+        } cout << endl;
+    }
+}
+
+void ex_27() {
+    int n;
+    cout << "give me an n: "; cin >> n;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+}
+
+void ex_28() {
+    int n;
+    cout << "give me an n: "; cin >> n;
+    for (int i = 1; i <= n; i ++) {
+        for (int j = 1; j <= i; j++) {
+            cout << i << " ";
+        }
+        cout << endl;
+        }
+    }
+
+void ex_29() {
+    int n;
+    cout << "give me an n: "; cin >> n;
+    for (int i = n; i >= 1; i--) {
+        for (int j = n; j >= i; j--) {
+            cout << j << " ";
+        }
+        cout << endl;
+        }
+    }
+
+void ex_30() {
+    const std::string CORRECT_PASSWORD = "Pass1212";
+    std::string userAttempt;
+    int attempts = 0;
+    const int MAX_ATTEMPTS = 3;
+    bool isAuthenticated = false;
+
+    std::cout << "--- Password Lock Simulation ---\n";
+
+    do {
+        attempts++;
+        std::cout << "Attempt " << attempts << "/" << MAX_ATTEMPTS << ". Enter password: ";
+
+        // Read the user's input, allowing spaces
+        std::getline(std::cin, userAttempt);
+
+        if (userAttempt == CORRECT_PASSWORD) {
+            isAuthenticated = true;
+            break;
+        }
+
+        if (attempts < MAX_ATTEMPTS) {
+            std::cout << "Wrong Password. Access denied. Try again.\n";
+        }
+
+    } while (attempts < MAX_ATTEMPTS);
+
+    if (isAuthenticated) {
+        std::cout << "\nAccess GRANTED. Welcome!\n";
+    } else {
+        std::cout << "\nMaximum attempts reached. Account locked.\n";
+    }
+}
+
+void ex_31() {
+    string sentence = "ana mananca papara";
+    vector <string> words;
+    string word;
+    stringstream ss(sentence);
+    if (sentence.empty()) {
+        cout << "empty sentence" << endl;
+    }
+
+    while (ss >> word) {
+        words.push_back(word);
+    }
+
+    for (int i = words.size() - 1; i >= 0; i--) {
+        cout << words[i] << " ";
+    }
+
+}
+
 int main(){
     int n = 10;
     /*ex_1(n);
@@ -421,8 +517,14 @@ int main(){
     ex_21();
     ex_22();
     ex_23();
-    ex_24();*/
+    ex_24();
     ex_25();
+    ex_26();
+    ex_27();
+    ex_28();
+    ex_29();
+    ex_30();*/
+    ex_31();
     return 0;
 }
 
