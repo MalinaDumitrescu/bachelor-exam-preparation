@@ -365,11 +365,37 @@ void ex_23() {
 void ex_24() {
     int n;
     cout << "n: " << endl; cin >> n;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n - i; j ++) {
+            cout << " ";
+        }
 
+        for (int k = 1 ; k <= 2 * i - 1; k++) {
+            cout << "*";
+        }
+
+        cout << endl;
+    }
 
 
     }
 
+
+void ex_25() {
+    int n;
+    cout << "n: " << endl; cin >> n;
+    for (int i = n; i >= 1; i--) {
+        for (int j = 1; j <= n - i; j ++) {
+            cout << " ";
+        }
+
+        for (int k = 1 ; k <= 2 * i - 1; k++) {
+            cout << "*";
+        }
+
+        cout << endl;
+    }
+}
 int main(){
     int n = 10;
     /*ex_1(n);
@@ -394,8 +420,9 @@ int main(){
     ex_20();
     ex_21();
     ex_22();
-    ex_23();*/
-    ex_24();
+    ex_23();
+    ex_24();*/
+    ex_25();
     return 0;
 }
 
